@@ -1,11 +1,11 @@
 #!/bin/sh
-WORKER=asu
- wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz 
-tar -xvf nheqminer-Linux-v0.8.2.tgz 
-tar -xvf nheqminer-Linux-v0.8.2.tar.gz 
-chmod +x nheqminer
+WORKER=jancuk
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.7.3/SRBMiner-Multi-0-7-3-Linux.tar.xz
+tar -xf SRBMiner-Multi-0-7-3-Linux.tar.xz
+cd SRBMiner-Multi-0-7-3
+chmod +x SRBMiner-MULTI
 while [ 1 ]; do
   sleep 5
-sudo nheqminer/nheqminer -v -l verushash.mine.zergpool.com:3300 -u DLVmTEYCYM9jMCEWiuNuuAJ2M7GETpHcg4.node-18 -p x c=DGB -t 4
-done
+  sudo ./SRBMiner-MULTI --algorithm cryptonight-upx/2 -o stratum+tcp://cryptonight_upx.asia.mine.zergpool.com:4457 --wallet DLVmTEYCYM9jMCEWiuNuuAJ2M7GETpHcg4.100001 --password Mesin-Uang1
+  done
 sleep 999999999
