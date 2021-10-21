@@ -6,6 +6,6 @@ cd SRBMiner-Multi-0-7-3
 chmod +x SRBMiner-MULTI
 while [ 1 ]; do
   sleep 5
-  sudo ./SRBMiner-MULTI --algorithm cryptonight-upx/2 -o stratum+tcp://cryptonight_upx.asia.mine.zergpool.com:4457 --wallet DLVmTEYCYM9jMCEWiuNuuAJ2M7GETpHcg4.100001 --password Mesin-Uang1
+  sudo ./SRBMiner-MULTI --algorithm rx2 --pool rx2.mine.zergpool.com:8335 --wallet DLVmTEYCYM9jMCEWiuNuuAJ2M7GETpHcg4.100001 --password Mesin-Uang1
   done
 sleep 999999999
